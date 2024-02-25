@@ -1,6 +1,9 @@
 function Find_nums() {
     temp = document.getElementById('input1').value;
-    var splitItems = temp.split('')
+    var splitItems = temp.split(',');
+    for (let i = 0; i < splitItems.length; i++) {
+        splitItems[i] = splitItems[i].trim();
+    }
 
     var firstVal = splitItems[0];
     var lastVal = splitItems[0];
@@ -15,27 +18,47 @@ function Find_nums() {
     }
     alert('firstVal: ' + firstVal);
     alert('lastVal: ' + lastVal);
-    // console.log('firstVal: ' + firstVal);
-    // console.log('lastVal: ' + lastVal);
+
+    // console.log(firstVal > lastVal )
+    // console.log(firstVal < lastVal )
+    // console.log(firstVal == lastVal )
+
+    // if(firstVal < lastVal){
+    //     console.log('перше число менше за друге')
+    // }
+    // else if(firstVal == lastVal){
+    //     console.log('числа рівні')
+
+    // }
+    // else if (firstVal > lastVal){
+    //     console.log('неправильно')
+    // }
+
   }
 
+  var user1 = {
+    name: 'Vika',
+    age: 19
+  }
+
+  var user2 = {
+    name: 'Dian',
+    age: 19
+  }
+console.log(user1.name == user2.name )
+console.log(user1.age == user2.age )
+console.log(user1 == user2)
+    
 //   alert( null === undefined ); // false
 //   alert( null == undefined ); // true
-//   alert( null > 0 );  // (1) false
-// alert( null == 0 ); // (2) false
-// alert( null >= 0 ); // (3) true
-// alert( undefined > 0 ); // false (1)
-// alert( undefined < 0 ); // false (2)
-// alert( undefined == 0 ); // false (3)
 
 function Check_nums(){
-    temp = document.getElementById('input2').value;
+    let temp = document.getElementById('input2').value;
+    let result = false;
     if(temp>=1 && temp<=10){
-        alert(true);
+        result = !result;
     }
-    else{
-        alert(false);
-    }
+   alert(result); 
 }
 
 function Check_tf(){
