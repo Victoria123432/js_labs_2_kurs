@@ -1,0 +1,10 @@
+{
+  "clg": {
+    "scope": "clg",
+    "prefix": "clg",
+    "body": [
+      "console.log()"
+    ],
+    "description": "clg"
+  }
+}

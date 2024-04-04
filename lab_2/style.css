@@ -1,31 +1,31 @@
-body{
-    display: flex;
-	justify-content: center;
-	align-items: center;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-	flex-direction: row;
+  flex-direction: row;
 }
-.task{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    flex-direction: column;
-    margin: 1vw;
+.task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background: rgb(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 1vw;
-    color: #333;
+  flex-direction: column;
+  margin: 1vw;
+
+  background: rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 1vw;
+  color: #333;
 }
-button{
-    margin-top: 5px;
-    height: 20px;
-    width: 170px;
-    border: none;
-    background-color: rgb(233, 151, 164);
-    color: white;
+button {
+  margin-top: 5px;
+  height: 20px;
+  width: 170px;
+  border: none;
+  background-color: rgb(233, 151, 164);
+  color: white;
 }
-button:hover{
-    background-color: rgb(198, 98, 115);
+button:hover {
+  background-color: rgb(198, 98, 115);
 }

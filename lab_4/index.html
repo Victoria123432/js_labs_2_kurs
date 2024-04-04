@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab_4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="task">
+      <h5>fruits</h5>
+      <button type="button" onclick="task1()">click</button>
+    </div>
+
+    <div class="task">
+      <h5>colors</h5>
+      <button type="button" onclick="task2()">click</button>
+    </div>
+
+    <div class="task">
+      <h5>employee data</h5>
+      <button type="button" onclick="task3()">click</button>
+      <p id="task3Res"></p>
+    </div>
+
+    <div class="task">
+      <h5>student data</h5>
+      <button type="button" onclick="task4()">click</button>
+      <p id="task4Res"></p>
+    </div>
+
+    <div class="task">
+      <h5>numbers</h5>
+      <button type="button" onclick="task5()">click</button>
+      <p id="task5Res"></p>
+    </div>
+
+    <div class="task">
+      <h5>Add a new book</h5>
+      <div class="inputs-6">
+        <input type="text" id="title" placeholder="Title" />
+        <input type="text" id="author" placeholder="Author" />
+        <input type="text" id="genre" placeholder="Genre" />
+        <input type="number" id="pages" placeholder="Pages" />
+        <input type="text" id="isAvailable" placeholder="Is available" />
+      </div>
+      <div class="inputs-6">
+        <label><input type="checkbox" value="true" /> Returned </label>
+        <label><input type="checkbox" value="false" /> Got </label>
+      </div>
+
+      <button
+        type="button"
+        onclick="library.Add_book(
+        document.getElementById('title').value,
+        document.getElementById('author').value,
+        document.getElementById('genre').value,
+        parseInt(document.getElementById('pages').value),
+        document.getElementById('isAvailable').value
+      )"
+      >
+        Add
+      </button>
+      <button
+        type="button"
+        onclick="library.removeBook(document.getElementById('title').value)"
+      >
+        Delete by title
+      </button>
+      <button
+        type="button"
+        onclick="library.findBooksByAuthor(document.getElementById('author').value)"
+      >
+        Find by author
+      </button>
+      
+      <button
+        type="button"
+        onclick="library.toggleBookAvailability(document.getElementById('title').value)"
+      >
+        Toggle
+      </button>
+      <button type="button" onclick="library.sortBooksByPages()">
+        Sort books by pages
+      </button>
+      <button type="button" onclick="library.getBooksStatistics()">
+        Get books statistics
+      </button>
+
+      <p id="task6Res"></p>
+    </div>
+    <div class="task">
+      <h5>Task 7</h5>
+      <button type="button" onclick="task7()">click</button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

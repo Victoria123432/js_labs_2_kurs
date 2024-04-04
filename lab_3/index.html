@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div></div>
+
+    <div class="task">
+      <h5>find sum of first 50 numbers</h5>
+      <button type="button" onclick="task1()">click</button>
+      <p id="task1Res"></p>
+    </div>
+
+    <div class="task">
+      <h5>find factorial</h5>
+      <input type="text" id="input1" />
+      <button type="button" onclick="task2()">click</button>
+      <p id="task2Res"></p>
+    </div>
+
+    <div class="task">
+      <h5>find month</h5>
+      <input type="text" id="input3" />
+      <button type="button" onclick="task3()">click</button>
+      <p id="task3Res"></p>
+    </div>
+
+    <div class="task">
+      <h5>sum of even numbers(arr with comas)</h5>
+      <input type="text" id="input4" />
+      <button type="button" onclick="task4()">click</button>
+      <p id="task4Res"></p>
+    </div>
+
+    <div class="task">
+      <h5>amount of vowels</h5>
+      <input type="text" id="input5" />
+      <button
+        type="button"
+        onclick="task5(document.getElementById('input5').value)"
+      >
+        click
+      </button>
+      <p id="task5Res"></p>
+    </div>
+
+    <div class="task">
+      <h5>base exponent</h5>
+      <div class="inputs-6">
+        <input type="text" id="base"/> <input type="text" id="exponent"/>
+      </div>
+      <button
+        type="button"
+        onclick="task6(document.getElementById('base').value, document.getElementById('exponent').value)"
+      >
+        click
+      </button>
+      <p id="task6Res"></p>
+    </div>
+    
+  </body>
+  <script src="index.js"></script>
+</html>
