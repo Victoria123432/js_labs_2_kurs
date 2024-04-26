@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>lab 5 task 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-wrapper">
+        <img id="bulbImg" src="light-bulb-off.png" alt="Blub" />
+      </div>
+      <button id="bulb-button" type="button" onclick="lampToggle()">
+        Bulb ON/OFF
+      </button>
+      <button type="button" onclick="lampBrightness()">
+        Change Brightness
+      </button>
+      <fieldset>
+        <legend>Choose button type:</legend>
+        <div>
+          <input
+            type="radio"
+            id="usual_lamp"
+            name="lamp_type"
+            value="usual"
+            checked
+            code="light-bulb-off.png"
+            code_on = "light-bulb-on.png"
+          />
+          <label >usual</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="old_lamp"
+            name="lamp_type"
+            value="old"
+            code="5f18c4ea-0439-42c0-8e28-71e53814b620.png"
+            code_on = "Fancy-Lamp-PNG-Picture.png"
+          />
+          <label >old table lamp</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="modern_lamp"
+            name="lamp_type"
+            value="modern"
+            code="modern_off.png"
+            code_on = "modern_on.png"
+          />
+          <label>modern table lamp</label>
+        </div>
+      </fieldset>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

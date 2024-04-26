@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    flex-direction: column;
+    margin: 1vw;
+  
+    background: rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1vw;
+    color: #333;
+  
+    transition: all 0.3s ease;
+  }
+  .container:hover {
+    animation: test 0.5s ease;
+    background: rgba(0, 0, 0, 0.349);
+    color: white;
+  }
+  
+  button {
+    margin-top: 5px;
+    height: 20px;
+    width: 170px;
+    border: none;
+    background-color: rgb(233, 151, 164);
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: rgb(198, 98, 115);
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: row;
+  }
+  .inputs input {
+    width: 5vw;
+  }
+  

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Інтернет-магазин</title>
+    <link rel="stylesheet" href="style_3.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h5>Додати новий товар</h5>
+      <div class="inputs">
+        <input type="text" id="name" placeholder="Назва" />
+        <input type="number" id="price" placeholder="Ціна" />
+        <input type="number" id="amount" placeholder="Кількість" />
+      </div>
+      <button type="button" onclick="addItem()">Додати</button>
+    </div>
+    <div class="container">
+      <h5>Видалити товар за ID</h5>
+      <div class="inputs">
+        <input
+          type="text"
+          id="productId"
+          placeholder="ID товару для видалення"
+        />
+      </div>
+      <button type="button" onclick="deleteItem()">Видалити</button>
+    </div>
+
+    <div class="container">
+      <h5>Оновити існуючий товар</h5>
+      <div class="inputs">
+        <input type="text" id="updateId" placeholder="ID товару" />
+        <input type="number" id="updatePrice" placeholder="Нова ціна" />
+        <input type="number" id="updateAmount" placeholder="Нова кількість" />
+      </div>
+      <button type="button" onclick="updateItem()">Оновити</button>
+    </div>
+    <div class="container">
+      <h5>Знайти товар за назвою</h5>
+      <div class="inputs">
+        <input type="text" id="searchName" placeholder="Введіть назву товару" />
+      </div>
+      <button type="button" onclick="searchItemByName()">Знайти</button>
+    </div>
+
+    <div class="container">
+        <h5>Оформити замовлення</h5>
+        <div class="inputs">
+            <input type="number" id="orderProductId" placeholder="ID товару" />
+            <input type="number" id="orderQuantity" placeholder="Кількість" />
+        </div>
+        <button type="button" onclick="placeOrder()">Оформити замовлення</button>
+    </div>
+    
+  </body>
+  <script src="index_3.js"></script>
+</html>

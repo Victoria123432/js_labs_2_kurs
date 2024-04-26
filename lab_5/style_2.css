@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-image: url("pexels-榛宝宝-19791080.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  block-size: cover;
+  background-attachment: fixed;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5vw;
+  padding: 5vh 0;
+  text-align: center;
+  color: aliceblue;
+}
+.clock-container, .user-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.clock-container div {
+  font-size: 6.5rem; 
+  backdrop-filter: blur(5px);
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+.user-input div{
+    
+  font-size: 2.5rem;
+  backdrop-filter: blur(5px);
+  background-color: hsla(0, 0%, 100%, 0.3);
+  padding: 1vh;
+}
+.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+  }
