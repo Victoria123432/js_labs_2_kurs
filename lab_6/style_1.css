@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  /* font-family: Arial, sans-serif; */
+  background-color: #f4f4f4;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  max-width: 80vw;
+  margin: 3vw auto;
+  /* padding: 0 10vh; */
+}
+h1 {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  gap: 1vw;
+  display: flex;
+  flex-wrap: wrap; /* Дозволяємо товарів переноситися на наступний рядок, якщо не поміщаються в один рядок */
+}
+li {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: calc(25% - 1vw); /* Ширина елементу - 1/3 від контейнера */
+  margin-bottom: 1vw;
+  padding: 1vw;
+  box-sizing: border-box; /* Додаємо box-sizing, щоб врахувати padding у визначенні ширини */
+  display: flex; /* Додаємо flex контейнер для розташування товарів в рядок */
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+li:hover .product-menu {
+  display: block;
+}
+
+.product-menu button {
+  margin-right: 5px;
+}
+.product-img {
+  max-width: 20vw;
+  max-height: 20vh;
+  margin-right: 1vw;
+  vertical-align: middle;
+}
+
+button {
+  background-color: rgb(0, 21, 75);
+  border: none;
+  border-radius: 15px;
+  padding: 0.5vw 1vw;
+  color: white;
+}
+button:hover {
+  border: 3px solid rgb(0, 21, 75);
+  background-color: white;
+  color: rgb(0, 21, 75);
+}
+
+.product-menu {
+  position: bottom;
+  display: none;
+  background-color: #fff;
+  padding: 5px;
+}
+.edit-form {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+.add-form {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+
+.search {
+  width: 30%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid rgb(0, 21, 75);
+  border-right: none;
+  height: 2,5vh;
+  border-radius: 5px 0 0 5px;
+  color: rgb(0, 21, 75);
+}
+
+.searchTerm:focus{
+  color: rgb(6, 42, 140);
+}
+
+.searchButton {
+  width: 3vw;
+  /* height: 5vh; */
+  border: 1px solid rgb(0, 21, 75);
+  background: rgb(0, 21, 75);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.items_imf{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 5vh;
+}
+
+/*Resize the wrap to see the search bar change!*/
+/* .wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
