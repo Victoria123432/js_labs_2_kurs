@@ -198,13 +198,11 @@ function libraryManagement() {
   }
 
   function toggleBookAvailability(title) {
+    
     const returnedCheckbox = document.querySelector(
       "input[type='checkbox'][value='true']"
     );
-    // const gotCheckbox = document.querySelector(
-    //   "input[type='checkbox'][value='false']"
-    // );
-
+    
     const isAvailable = returnedCheckbox.checked ? true : false;
 
     const bookIndex = books.findIndex((book) => book.title === title);

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+		<title>Список товарів</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Список товарів</h1>
+
+			<div class="items_info">
+				<div class="search">
+					<input type="text" id="searchInput" placeholder="Пошук товарів..." />
+					<button class="searchButton">
+						<i class="fa fa-search"></i>
+					</button>
+				</div>
+				<div class="totalPrice">
+					<p id="totalPriceText">Загальна вартість: $0</p>
+				</div>
+				<button id="add-item-btn">Додати новий товар</button>
+			</div>
+
+			<ul id="product-list"></ul>
+		</div>
+
+		<!-- Модальне вікно для редагування товарів -->
+		<div id="edit-form" class="edit-form">
+			<label for="product-name">Назва товару:</label><br />
+			<input type="text" id="product-name" /><br />
+			<label for="product-price">Ціна товару:</label><br />
+			<input type="text" id="product-price" /><br />
+			<label for="product-image">Посилання на зображення:</label><br />
+			<input type="file" id="product-image-upload" accept="image/*" />
+			<br /><br />
+			<button id="save-btn">Зберегти</button>
+			<button id="cancel-btn">Скасувати</button>
+		</div>
+
+		<script src="task.js"></script>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+.container {
+  width: 80%;
+  height: 70vh;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 1px solid rgb(204, 204, 204);
+  padding: 1vh;
+  display: flex;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+
+.box {
+  background-color: #f0f0f0be;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.box:hover {
+  outline: 2px solid rgb(116, 116, 227);
+}
+
+.hidden {
+  opacity: 0;
+  border: 1px solid black;
+}
+
+.box:nth-child(1) {
+  height: 100px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: plum;
+}
+.box:nth-child(2) {
+  height: 150px;
+  width: 200px;
+  background-color: aquamarine;
+  box-shadow: 2px 2px 4px rgba(137, 248, 93, 0.451);
+}
+.box:nth-child(3) {
+    height: 120px;
+    width: 200px;
+    background-color: #ffcccc;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    border: 2px solid #ff9999;
+    color: #660000;
+    font-size: 18px;
+  }
+  
+  .box:nth-child(4) {
+    height: 80px;
+    width: 200px;
+    background-color: #ccffcc;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    border: 4px dotted #66cc66;
+    color: #003300;
+    font-size: 16px;
+  }
+  
+  .box:nth-child(5) {
+    height: 180px;
+    width: 200px;
+    background-color: #ccccff;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+    border: 3px solid #9999ff;
+    color: #000066;
+    font-size: 20px;
+   
+  }
+  
+  .box:nth-child(6) {
+    height: 160px;
+    width: 200px;
+    background-color: #ffffcc;
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0.5);
+    border: 2px dashed #cccc66;
+    color: #666600;
+    font-size: 18px;
+    
+  }
+  
+  .box:nth-child(7) {
+    height: 50px;
+    width: 200px;
+    background-color: #ffccff;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.5);
+    border: 5px double #ff99ff;
+    color: #660066;
+    font-size: 14px;
+   
+  }
+  
+  .box:nth-child(8) {
+    height: 170px;
+    width: 200px;
+    background-color: #ccffff;
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.5);
+    border: 1px solid #66cccc;
+    color: #006666;
+    font-size: 22px;
+  }
+  

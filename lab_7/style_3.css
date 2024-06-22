@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50vh 0 0;
+  gap: 1vw;
+  color: white;
+  background-color: rgb(237, 237, 237);
+ 
+}
+#tree{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vw;
+}
+.tree-node {
+  cursor: pointer;
+  font-size: xx-large;
+  background-color: rgb(164, 112, 212);
+  border-radius: 5px;
+  
+}
+.tree-node .children {
+  display: none;
+}

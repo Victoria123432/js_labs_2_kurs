@@ -2,7 +2,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -26,18 +25,7 @@ body {
   background: rgba(0, 0, 0, 0.349);
   color: white;
 }
-/* @keyframes test {
-  10% {
-    transform: translateY(-1vw);
-  }
-  90% {
-    transform: translateY(1vw);
-  }
 
-  100% {
-    transform: translateY(0);
-  }
-} */
 button {
   margin-top: 5px;
   height: 20px;
@@ -58,6 +46,3 @@ button:hover {
 .inputs-6 input {
   width: 5vw;
 }
-/* .inputs-6 input:first-child{
-    margin-right: 1vw;
-  } */

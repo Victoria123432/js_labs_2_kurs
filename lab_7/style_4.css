@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+  }
+
+.active {
+    background-color: #62ccac;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .tab-content {
+    transition: transform 0.3s ease; /* Плавна анімація */
+  }
+
+  /* Початкова позиція для анімації */
+  .tab-content.slide-up {
+    transform: translateY(100%);
+  }
+
+  /* Кінцева позиція для анімації */
+  /* .tab-content.slide-down {
+    transform: translateY(0);
+  } */
